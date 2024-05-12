@@ -36,6 +36,7 @@ export default function Home() {
           <img src="/favicon.png" alt="logo" />
         </a>
 
+
         <a href={"#about"}>About</a>
         <a href={"#skills"}>Skills</a>
         <a href={"#work"}>Work</a>
