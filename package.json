@@ -16,6 +16,9 @@
     "react-dancing-lines": "^1.1.4",
     "react-dom": "^18"
   },
+  "resolutions": {
+    "react": "^16.13.1"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
