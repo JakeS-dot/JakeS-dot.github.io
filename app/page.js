@@ -1,4 +1,3 @@
-"use client";
 import React from "react"
 // import DancingLines from "react-dancing-lines/index.es.js"
 import Image from "next/image";
