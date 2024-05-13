@@ -1,3 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 :root {
   --gray:#080510 ;
