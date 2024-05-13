@@ -13,7 +13,7 @@ export default function Drake() {
       }}
     >
       <Image src={"/drake.png"} alt={"drake"} width={500} height={500}></Image>
-      <h1>This is for you evan pookie :) You can't click the vod btw</h1>
+      <h1>This is for you evan pookie :) You cant click the vod btw</h1>
     </div>
   );
 }

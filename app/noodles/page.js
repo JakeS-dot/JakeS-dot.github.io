@@ -7,11 +7,13 @@ const AfterPlayButton = () => {
 const PlayButton = () => {
   return (
     <div>
-      <img
+      <Image
         src={
           "https://www.freepnglogos.com/uploads/play-button-png/play-button-watch-video-understand-the-power-clarip-less-than-minute-7.png"
         }
         alt={"play_button"}
+        height={50}
+        width={50}
         style={{ height: "50vh", width: "auto", cursor: "pointer" }}
       />
     </div>
