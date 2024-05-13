@@ -34,7 +34,7 @@ export default function Home() {
 
       <nav>
         <a href={"#home"} id={"logo"}>
-          <Image src="nextjs-github-pages/favicon.png" alt="logo" height={'5dvh'} width={'auto'} priority/>
+          <Image src="/favicon.png" alt="logo" height={64} width={64} priority/>
         </a>
         <a href={"#about"}>About</a>
         <a href={"#skills"}>Skills</a>

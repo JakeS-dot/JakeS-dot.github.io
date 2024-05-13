@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
 @tailwind base;
 
 @tailwind components;
@@ -5,7 +7,6 @@
 @tailwind utilities;
 
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 :root {
   --gray:#080510 ;
   --red: #f32b29;
@@ -21,7 +22,9 @@ body {
   color: whitesmoke;
 }
 
-section {
+/*section {*/
+/*Because we are lacking of a hover effect, we do this*/
+section, div#home {
   height: 100vh;
   width: 100vw;
   background-color: var(--gray)
@@ -95,8 +98,8 @@ nav a[href="#contact"]:hover {
   width: 10dvw;
 }
 #logo img {
-  height: 5vh;
-  width: auto;
+  height: 5vh !important;
+  width: auto !important;
 }
 
 #smaller-title {
@@ -140,7 +143,7 @@ nav a[href="#contact"]:hover {
   cursor: default;
 }
 #title-button {
-  width: 40%;
+  width: 100%;
   margin: 0;
   text-shadow: none;
   color: whitesmoke;
@@ -148,24 +151,33 @@ nav a[href="#contact"]:hover {
   font-size: calc(2vh + 2vw);
   padding: 4px;
   z-index: 2;
-  position: relative;
+  position: absolute;
+  background-image: none;
+  transition: all 0.3s ease-in-out;
 }
 
 #title-button-wrapper {
-
-  border: 1px solid var(--cyan);
+  background-image: none;
+  transition: all 0.3s ease-in-out;
+  height: 70px;
+  border: 1px dashed var(--cyan);
   position: relative;
   width: 40%; /* Ensure the wrapper fills the button's width */
+
+}
+#title-button-wrapper:hover {
+  transition: all 0.3s ease-in-out;
   background-size: 200% 100%;
   background-image: repeating-linear-gradient(
-    -45deg,
-    var(--cyan) 0px,
-    var(--cyan) 4px,
-    transparent 4px,
-    transparent 12px
+          45deg,
+          var(--cyan) 0px,
+          var(--cyan) 6px,
+          transparent 6px,
+          transparent 12px
   );
   background-repeat: repeat;
   animation: gradient 25s linear infinite alternate-reverse;
+  border: 1px solid var(--cyan);
 }
 #title-desc {
   font-size: calc(1vh + 1vw);
