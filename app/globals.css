@@ -6,16 +6,27 @@
 
 @tailwind utilities;
 
-
-:root {
-  --gray:#080510 ;
-  --red: #f32b29;
-  --orange: #f55421;
-  --yellow: #ffff00;
-  --cyan: #27eed9;
-  --blue: #099de3;
+@media (prefers-color-scheme: dark) or (prefers-color-scheme: no-preference) {
+  :root {
+    --gray: #080510;
+    --red: #f32b29;
+    --orange: #f55421;
+    --yellow: #ffff00;
+    --cyan: #27eed9;
+    --blue: #099de3;
+  }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --gray: #212025;
+    --red: #ff6b6b;
+    --orange: #ff8c1a;
+    --yellow: #ffff66;
+    --cyan: #66ffff;
+    --blue: #66b2ff;
+  }
+}
 body {
   margin: 0;
   font-family: "IBM Plex Sans", "Arial Rounded MT Bold", sans-serif;
@@ -24,10 +35,11 @@ body {
 
 /*section {*/
 /*Because we are lacking of a hover effect, we do this*/
-section, div#home {
+section,
+div#home {
   height: 100vh;
   width: 100vw;
-  background-color: var(--gray)
+  background-color: var(--gray);
 }
 
 #home {
@@ -37,12 +49,11 @@ section, div#home {
 
 .title {
   display: flex;
-  height: 93vh;
+  height: 100vh;
   align-items: center;
 }
 
-.title p,
-#title-button {
+.title p {
   text-shadow: 0 0 15px var(--cyan);
   margin: 0 0 0 32px;
   font-size: calc(3vw + 4vh);
@@ -95,11 +106,11 @@ nav a[href="#contact"]:hover {
 }
 
 #logo {
+  margin-top: 5px;
+  border-right: none;
+  position: relative;
   width: 10dvw;
-}
-#logo img {
-  height: 5vh !important;
-  width: auto !important;
+  height: 5.5vh;
 }
 
 #smaller-title {
@@ -143,7 +154,7 @@ nav a[href="#contact"]:hover {
   cursor: default;
 }
 #title-button {
-  width: 100%;
+  text-align: center;
   margin: 0;
   text-shadow: none;
   color: whitesmoke;
@@ -154,31 +165,32 @@ nav a[href="#contact"]:hover {
   position: absolute;
   background-image: none;
   transition: all 0.3s ease-in-out;
+  border: 1px solid var(--cyan);
 }
 
-#title-button-wrapper {
-  background-image: none;
-  transition: all 0.3s ease-in-out;
-  height: 70px;
-  border: 1px dashed var(--cyan);
-  position: relative;
-  width: 40%; /* Ensure the wrapper fills the button's width */
-
-}
-#title-button-wrapper:hover {
+#title-button:hover {
   transition: all 0.3s ease-in-out;
   background-size: 200% 100%;
   background-image: repeating-linear-gradient(
-          45deg,
-          var(--cyan) 0px,
-          var(--cyan) 6px,
-          transparent 6px,
-          transparent 12px
+    45deg,
+    var(--cyan) 0px,
+    var(--cyan) 6px,
+    transparent 6px,
+    transparent 12px
   );
   background-repeat: repeat;
   animation: gradient 25s linear infinite alternate-reverse;
   border: 1px solid var(--cyan);
 }
+
+#title-about-wrapper {
+  display: contents;
+  height: 100vh;
+  align-items: start;
+}
+#title-about {
+}
+
 #title-desc {
   font-size: calc(1vh + 1vw);
   color: #5a606b;
@@ -193,17 +205,17 @@ nav a[href="#contact"]:hover {
   }
 
   #title-button-wrapper {
-    width: 100vw;
+    text-align: center;
+    justify-content: center;
     align-items: center;
   }
   #title-button {
-    margin-left: 0;
-    text-wrap: nowrap;
+    padding: 10px;
+    position: static;
+    text-align: center;
   }
-}
 
-@media (prefers-reduced-motion) {
-  .cursor-effect-follower {
-    display: none;
+  #logo {
+    width: 50vw !important;
   }
 }

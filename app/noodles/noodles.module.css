@@ -1,0 +1,82 @@
+@font-face {
+  font-family: arcadeclassic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("ArcadeClassic"),
+    url(https://fonts.cdnfonts.com/s/6071/ARCADECLASSIC.woff) format("woff");
+}
+.body {
+  background: #1d1e21;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative; /* Add this line */
+}
+
+.body span {
+  font-family: "ArcadeClassic", serif;
+  margin: 0;
+  cursor: none;
+}
+
+.marquee {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.track {
+  white-space: nowrap;
+  height: auto;
+  will-change: transform;
+  animation: marquee 6s linear reverse infinite;
+  z-index: 0;
+}
+
+.track::after {
+  content: attr(data-text);
+  position: relative;
+  left: 50px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.noodles {
+  z-index: 4;
+  width: 100vw;
+  height: 93vh;
+  top: 10px;
+  position: absolute;
+  cursor: none;
+  grid-template-columns: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+  grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+  column-gap: 10px;
+  row-gap: 15px;
+  background-image: url("https://media0.giphy.com/media/KcWaUe5tKkIrSI2LaU/giphy.gif?cid=6c09b952ub2v4tgip8ofzgt53fkabytssikz5nucqw18jc2c&ep=v1_stickers_related&rid=giphy.gif&ct=");
+  background-size: 10vh auto;
+}
+
+.noodles img {
+  height: 10vh;
+  width: auto;
+}
+
+.playButton {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  background: none;
+  border: none;
+}

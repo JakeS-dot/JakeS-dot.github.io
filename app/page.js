@@ -1,5 +1,5 @@
-'use client'
-import React from "react"
+"use client";
+import React from "react";
 // import DancingLines from "react-dancing-lines/index.es.js"
 import Image from "next/image";
 function wrapLetters(text, id = null) {
@@ -28,13 +28,11 @@ function wrapLetters(text, id = null) {
 }
 
 export default function Home() {
-
   return (
     <div>
-
       <nav>
         <a href={"#home"} id={"logo"}>
-          <Image src="/favicon.png" alt="logo" height={64} width={64} priority/>
+          <Image src="/favicon.png" alt="logo" fill priority />
         </a>
         <a href={"#about"}>About</a>
         <a href={"#skills"}>Skills</a>
@@ -42,7 +40,6 @@ export default function Home() {
         <a href={"#contact"}>Contact</a>
       </nav>
       <main>
-
         <div id={"home"}>
           {/* <DancingLines></DancingLines> */}
           <div className="title">
@@ -64,7 +61,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section id="about"></section>
+        <section id="about">
+          <br/><br/><br/>
+          <div className="title" id={"title-about-wrapper"}>
+            <p id={"title-about"}>About Me</p>
+          </div>
+        </section>
         <section id="skills"></section>
         <section id="work"></section>
         <section id="contact"></section>
