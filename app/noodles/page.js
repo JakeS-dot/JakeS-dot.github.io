@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import styles from "./noodles.module.css";
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 const AfterPlayButton = () => {
   return <div style={{ display: "none" }}></div>;
 };
@@ -81,7 +82,7 @@ const RainbowText = ({ count, font }) => {
 
   return (
     <div className={styles.marquee}>
-      <div className={styles.track} style={{marginTop: font-15}}>
+      <div className={styles.track} style={{ marginTop: font - 15 }}>
         {repeatedText.split("").map((letter, index) => (
           <span
             key={index}
@@ -89,9 +90,9 @@ const RainbowText = ({ count, font }) => {
               color: colors[index % colors.length],
               fontSize: font,
               textShadow: `${font / 8}px 0px 0 ${darkenColor(
-                darkenColor(colors[index % colors.length])
+                darkenColor(colors[index % colors.length]),
               )}, ${font / 4}px 0px 0 ${darkenColor(
-                darkenColor(darkenColor(colors[index % colors.length]))
+                darkenColor(darkenColor(colors[index % colors.length])),
               )}`,
               letterSpacing: "0.1em",
             }}
@@ -109,7 +110,6 @@ export default function Noodles() {
     <>
       <div className={styles.body}>
         <AudioPlayer />
-
         <div style={{ marginTop: -49, marginBottom: 0 }}>
           <RainbowText count={26} font={32} />
         </div>
