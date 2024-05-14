@@ -53,7 +53,8 @@ div#home {
   align-items: center;
 }
 
-.title p {
+
+.title p.main-title {
   text-shadow: 0 0 15px var(--cyan);
   margin: 0 0 0 32px;
   font-size: calc(3vw + 4vh);
@@ -69,6 +70,7 @@ div#home {
 }
 
 nav {
+  z-index: 5;
   position: fixed;
   height: 7vh;
   background-color: #181818;
@@ -153,15 +155,24 @@ nav a[href="#contact"]:hover {
 .marque-overlay span {
   cursor: default;
 }
+#title-about {
+  text-shadow: 0 0 8px var(--red) !important;
+}
+.sub-title-text {
+  width: 45vw;
+  font-size: calc(0.85vw + 0.85vh) !important;
+  color: whitesmoke;
+  text-shadow: 0 0 8px var(--orange) !important;
+}
 #title-button {
   text-align: center;
   margin: 0;
+  z-index: 0;
   text-shadow: none;
   color: whitesmoke;
   text-decoration: none;
   font-size: calc(2vh + 2vw);
   padding: 4px;
-  z-index: 2;
   position: absolute;
   background-image: none;
   transition: all 0.3s ease-in-out;
@@ -183,7 +194,7 @@ nav a[href="#contact"]:hover {
   border: 1px solid var(--cyan);
 }
 
-#title-about-wrapper {
+ .non-landing-title {
   display: contents;
   height: 100vh;
   align-items: start;
@@ -198,7 +209,7 @@ nav a[href="#contact"]:hover {
 }
 
 @media only screen and (max-width: 786px) and (orientation: portrait) {
-  .title p {
+  .title p.main-title {
     margin-left: 0;
     width: 100vw;
     text-align: center;
@@ -213,6 +224,17 @@ nav a[href="#contact"]:hover {
     padding: 10px;
     position: static;
     text-align: center;
+  }
+  .sub-title-text {
+    font-size: calc(1vw + 1vh) !important;
+    margin-left: 10vw !important;
+    text-align: left !important;
+    width: 80vw !important;
+  }
+
+
+  .no-mobile {
+    display: none;
   }
 
   #logo {
