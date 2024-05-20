@@ -43,7 +43,7 @@ export default function Closet() {
               />
           </div>
 
-          <div>{state !== 'joke' && <h1 style={{margin: 20}}> Wrong! Idiot - click submit or something!</h1>}</div><div>{state === 'joke' && <div className={styles.joke}>Ha ha ha! You're so Funny!... <span className={styles.jokesmall}>but maybe right...</span></div>}</div>
+          <div>{state !== 'joke' && <h1 style={{margin: 20}}> Wrong! Idiot, click submit or something!</h1>}</div><div>{state === 'joke' && <div className={styles.joke}>Ha ha ha! You`$apos`re so Funny!... <span className={styles.jokesmall}>but maybe right...</span></div>}</div>
           <button
               className={styles.input}
               onClick={() => checkName(`${firstname} ${middlename} ${lastname}`)}
