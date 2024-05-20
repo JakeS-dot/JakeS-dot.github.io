@@ -15,6 +15,9 @@
     --cyan: #27eed9;
     --blue: #099de3;
   }
+  body {
+    background-color: var(--gray);
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,6 +28,9 @@
     --yellow: #ffff66;
     --cyan: #66ffff;
     --blue: #66b2ff;
+  }
+  body {
+    background-color: var(--gray);
   }
 }
 body {
@@ -52,7 +58,6 @@ div#home {
   height: 100vh;
   align-items: center;
 }
-
 
 .title p.main-title {
   text-shadow: 0 0 15px var(--cyan);
@@ -194,7 +199,7 @@ nav a[href="#contact"]:hover {
   border: 1px solid var(--cyan);
 }
 
- .non-landing-title {
+.non-landing-title {
   display: contents;
   height: 100vh;
   align-items: start;
@@ -231,7 +236,6 @@ nav a[href="#contact"]:hover {
     text-align: left !important;
     width: 80vw !important;
   }
-
 
   .no-mobile {
     display: none;
