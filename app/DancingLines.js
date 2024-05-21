@@ -110,22 +110,22 @@ const HueOscillator = /** @class */ (function () {
 const DEFAULT_BACKGROUND_COLOR = "rgb(8,5,16)";
 
 function DancingLines(props) {
-    const _a = props.debug,
-      debug = _a === void 0 ? false : _a,
-      _b = props.friction,
-      friction = _b === void 0 ? 0.5 : _b,
-      _c = props.trails,
-      trails = _c === void 0 ? 20 : _c,
-      _d = props.size,
-      size = _d === void 0 ? 50 : _d,
-      _e = props.dampening,
-      dampening = _e === void 0 ? 0.25 : _e,
-      _f = props.tension,
-      tension = _f === void 0 ? 0.98 : _f,
-      _g = props.backgroundColor,
-      backgroundColor = _g === void 0 ? DEFAULT_BACKGROUND_COLOR : _g;
-    const canvasRef = useRef(null);
-    const targetRef = useRef({ x: 0, y: 0 });
+  const _a = props.debug,
+    debug = _a === void 0 ? false : _a,
+    _b = props.friction,
+    friction = _b === void 0 ? 0.5 : _b,
+    _c = props.trails,
+    trails = _c === void 0 ? 20 : _c,
+    _d = props.size,
+    size = _d === void 0 ? 50 : _d,
+    _e = props.dampening,
+    dampening = _e === void 0 ? 0.25 : _e,
+    _f = props.tension,
+    tension = _f === void 0 ? 0.98 : _f,
+    _g = props.backgroundColor,
+    backgroundColor = _g === void 0 ? DEFAULT_BACKGROUND_COLOR : _g;
+  const canvasRef = useRef(null);
+  const targetRef = useRef({ x: 0, y: 0 });
   const tendrilsRef = useRef([]);
   const runningRef = useRef(false);
   const frameRef = useRef(0);
@@ -136,10 +136,11 @@ function DancingLines(props) {
     offset: 285,
   });
   const requestAnimationFrame =
-      window.requestAnimationFrame ||
-      function (fn) {
-        window.setTimeout(fn, 1000 / 60);
-      };
+    typeof window !== "undefined" && window.requestAnimationFrame
+      ? window.requestAnimationFrame
+      : function (fn) {
+          setTimeout(fn, 1000 / 60);
+        };
 
   const init = function (event) {
     debug && console.log("init");
@@ -258,32 +259,29 @@ function DancingLines(props) {
   /**
    * Attach all events to window object
    */
-  useEffect(
-    function () {
-      debug && console.log("useEffect");
-      if (!canvasRef.current) {
-        return;
-      }
-      runningRef.current = true;
-      frameRef.current = 1;
-      document.addEventListener("mousemove", init);
-      document.addEventListener("touchstart", init);
-      document.body.addEventListener("orientationchange", resize);
-      window.addEventListener("resize", resize);
-      window.addEventListener("focus", start);
-      window.addEventListener("blur", stop);
-      resize();
-      return function () {
-        document.removeEventListener("mousemove", init);
-        document.removeEventListener("touchstart", init);
-        document.body.removeEventListener("orientationchange", resize);
-        window.removeEventListener("resize", resize);
-        window.removeEventListener("focus", start);
-        window.removeEventListener("blur", stop);
-      };
-    },
-    [canvasRef.current],
-  );
+  useEffect(function () {
+    debug && console.log("useEffect");
+    if (!canvasRef.current) {
+      return;
+    }
+    runningRef.current = true;
+    frameRef.current = 1;
+    document.addEventListener("mousemove", init);
+    document.addEventListener("touchstart", init);
+    document.body.addEventListener("orientationchange", resize);
+    window.addEventListener("resize", resize);
+    window.addEventListener("focus", start);
+    window.addEventListener("blur", stop);
+    resize();
+    return function () {
+      document.removeEventListener("mousemove", init);
+      document.removeEventListener("touchstart", init);
+      document.body.removeEventListener("orientationchange", resize);
+      window.removeEventListener("resize", resize);
+      window.removeEventListener("focus", start);
+      window.removeEventListener("blur", stop);
+    };
+  });
   const styles = {
     position: "fixed",
     zIndex: -100,
