@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-// import DancingLines from "react-dancing-lines/index.es.js"
+import DancingLines from "react-dancing-lines/index.es.js";
 import Image from "next/image";
 function wrapLetters(text, id = null) {
   return text.split("").map((char, index) => {
@@ -39,21 +39,25 @@ export default function Home() {
         <a href={"#work"}>Work</a>
         <a href={"#contact"}>Contact</a>
       </nav>
-      <main>
-        <div id={"home"}>
-          {/* <DancingLines></DancingLines> */}
+      <main id={"home"}>
+        <div>
+          <DancingLines></DancingLines>
           <div className="title">
             <div className="title-flex1">
-              <p className={'main-title'}>{wrapLetters("Hello,", "hello")}</p>
-              <p className={'main-title'}>
+              <p className={"main-title"}>{wrapLetters("Hello,", "hello")}</p>
+              <p className={"main-title"}>
                 {wrapLetters("I'm ")}
                 <span className={"marque-overlay"}>
                   {wrapLetters("Jake Shankman", "title-marque")}
                 </span>
               </p>
-              <p className={'main-title'}>{wrapLetters("A Web Developer", "smaller-title")}</p>
-              <p id={"title-desc"} className={'main-title'}>Specializing in Next.js and React</p>
-              <p className={'main-title'} id={"title-button-wrapper"}>
+              <p className={"main-title"}>
+                {wrapLetters("A Web Developer", "smaller-title")}
+              </p>
+              <p id={"title-desc"} className={"main-title"}>
+                Specializing in Next.js and React
+              </p>
+              <p className={"main-title"} id={"title-button-wrapper"}>
                 <a href={"#contact"} id="title-button">
                   Contact Me!
                 </a>
@@ -62,11 +66,15 @@ export default function Home() {
           </div>
         </div>
         <section id="about">
-          <br/><br/><br/>
-          <div className="title non-landing-title" >
-            <p id={"title-about"} className={'main-title'}>About Me</p>
+          <br />
+          <br />
+          <br />
+          <div className="title non-landing-title">
+            <p id={"title-about"} className={"main-title"}>
+              About Me
+            </p>
             <div>
-              <p className={'main-title sub-title-text'}>
+              <p className={"main-title sub-title-text"}>
                 As a highly motivated student developer with four years of
                 experience in Python coding and web development languages, I
                 have gained valuable skills in building APIs and designing
@@ -80,19 +88,23 @@ export default function Home() {
                 and scalable interfaces. Additionally, my expertise in HTML/CSS
                 has allowed me to create visually appealing and user-friendly
                 web pages. <br /> <br />
-               <div className="no-mobile">Motivated by a strong desire to broaden my horizons and stay
-                 ahead of the technological curve, I am currently focused on
-                 expanding my skill set to include other programming languages.
-                 Through dedication, perseverance, and a willingness to step
-                 outside my comfort zone, I am confident that I can master new
-                 tools and technologies and excel in any programming endeavor
-                 that comes my way.</div>
+                <span className="no-mobile">
+                  Motivated by a strong desire to broaden my horizons and stay
+                  ahead of the technological curve, I am currently focused on
+                  expanding my skill set to include other programming languages.
+                  Through dedication, perseverance, and a willingness to step
+                  outside my comfort zone, I am confident that I can master new
+                  tools and technologies and excel in any programming endeavor
+                  that comes my way.
+                </span>
               </p>
             </div>
           </div>
         </section>
         <section id="skills">
-          <br/><br/><br/>
+          <br />
+          <br />
+          <br />
           <div className="title non-landing-title">
             <p className="main-title" id="title-skills">
               Skills
