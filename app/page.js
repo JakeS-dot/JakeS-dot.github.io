@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import DancingLines from "react-dancing-lines/index.es.js";
+import DancingLines from "./DancingLines";
 import Image from "next/image";
 function wrapLetters(text, id = null) {
   return text.split("").map((char, index) => {
