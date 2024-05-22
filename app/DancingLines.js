@@ -107,8 +107,9 @@ const HueOscillator = /** @class */ (function () {
   return HueOscillator;
 })();
 
-const DEFAULT_BACKGROUND_COLOR = "rgb(8,5,16)";
 
+
+const DEFAULT_BACKGROUND_COLOR = '#080510'
 function DancingLines(props) {
   const _a = props.debug,
     debug = _a === void 0 ? false : _a,
@@ -241,7 +242,7 @@ function DancingLines(props) {
   };
   const mousemove = function (event) {
     debug && console.log("mousemove");
-    if (event instanceof TouchEvent) {
+    if (window.TouchEvent && event instanceof TouchEvent) {
       targetRef.current.x = event.touches[0].pageX;
       targetRef.current.y = event.touches[0].pageY;
     } else {

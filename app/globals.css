@@ -32,6 +32,9 @@
   body {
     background-color: var(--gray);
   }
+  section#about {
+    background: linear-gradient(#080510, var(--gray));
+  }
 }
 body {
   margin: 0;
@@ -47,7 +50,6 @@ div#home {
   width: 100vw;
   background-color: var(--gray);
 }
-
 
 .title {
   display: flex;
@@ -181,7 +183,7 @@ nav a[href="#contact"]:hover {
 }
 
 #title-button:hover {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
   background-size: 200% 100%;
   background-image: repeating-linear-gradient(
     45deg,
@@ -209,6 +211,42 @@ nav a[href="#contact"]:hover {
   text-shadow: none;
 }
 
+.about-langs h1 {
+  font-size: calc(2.5vh + 2.5vw);
+  text-align: left;
+  border: whitesmoke 2px solid;
+  border-radius: 15px;
+  height: auto;
+  width: 30vw;
+  padding: 10px;
+  line-height: 9vh;
+  margin-bottom: 5vh;
+}
+.no-desktop {
+  opacity: 0;
+}
+.about-langs {
+  margin: 0 5vw 3vh 6vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.langs-title span {
+  font-size: calc(1vh + 1.5vw);
+}
+.about-langs h1#one {
+  text-shadow: 0 0 20px var(--orange);
+}
+
+#two {
+  text-shadow: 0 0 20px var(--cyan);
+}
+
+#three {
+  text-shadow: 0 0 20px var(--yellow);
+}
+
 @media only screen and (max-width: 786px) and (orientation: portrait) {
   .title p.main-title {
     margin-left: 0;
@@ -233,11 +271,31 @@ nav a[href="#contact"]:hover {
     width: 80vw !important;
   }
 
+  .no-desktop {
+    opacity: 1;
+  }
   .no-mobile {
     display: none;
   }
 
   #logo {
     width: 50vw !important;
+  }
+
+  .about-langs-con {
+  }
+
+  .about-langs h1 {
+    font-size: calc(2.5vh + 4vw);
+    line-height: 5vh;
+    width: 90vw;
+    span {
+      font-size: calc(1.5vh + 3vw);
+    }
+    margin: 0;
+    text-align: center;
+  }
+
+  .about-con {
   }
 }
