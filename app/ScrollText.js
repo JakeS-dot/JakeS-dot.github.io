@@ -37,14 +37,14 @@ const TagCloudComp = () => {
     };
 
     TagCloud(container, texts, options);
-  }, [0]);
+  }, []);
 
   return (
-    <>
-      <div className="text-sphere">
-        <span className="tagcloud"/>
-      </div>
-    </>
+      <>
+        <div className="text-sphere">
+          <span className="tagcloud"/>
+        </div>
+      </>
   );
 };
 

@@ -2,7 +2,7 @@
 import React from "react";
 import DancingLines from "./DancingLines";
 import Image from "next/image";
-// import TagCloudComp from "./TagCloudComp";
+import ScrollText from "./ScrollText";
 function wrapLetters(text, id = null) {
   return text.split("").map((char, index) => {
     if (char === " ") {
@@ -74,9 +74,9 @@ export default function Home() {
             <p id={"title-about"} className={"main-title"}>
               About Me
             </p>
-            <div id={"about-con"}>
+            <div id={"about-langs-con"}>
               <div>
-                <p className="main-title sub-title-text">
+                <p className="main-title sub-title-text" id={"about-text"}>
                   As a highly motivated student developer with four years of
                   experience in Python coding and web development languages, I
                   have gained valuable skills in building APIs and designing
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
               <div
                 style={{ width: "50vw" }}
-                className={"about-langs-con no-mobile no-desktop"}
+                className={"about-langs-con no-mobile"}
               >
                 <div className="about-langs" id="div-1">
                   <h1 className="langs-title" id={"one"}>
@@ -156,10 +156,44 @@ export default function Home() {
             <p className="main-title" id="title-skills">
               Skills
             </p>
+            <div id={"skills-flex-con"}>
+              <p className="main-title sub-title-text" id="skills-text">
+                As an experienced developer, I specialize in HTML, CSS, React,
+                and Python with almost 5 years of coding experience. I excel in
+                creating visually appealing interfaces using HTML and CSS, while
+                my expertise in React enables me to build dynamic and
+                interactive web applications. With strong Python skills, I
+                deliver robust solutions for various programming challenges,
+                including algorithms, data-driven applications, and APIs. I am
+                dedicated to continuous learning and staying updated with the
+                latest trends, ensuring innovative and cutting-edge solutions
+                for clients. <br />
+                <br />
+                Overall, my full-stack developer experience, coupled with my
+                strong Python skills, allows me to tackle diverse challenges
+                ranging from front-end development with HTML, CSS, and React to
+                back-end development involving database management, algorithmic
+                problem-solving, and API development. I am dedicated to
+                continuous learning, staying updated with the latest trends and
+                best practices, and delivering innovative and cutting-edge
+                solutions for my clients.
+              </p>
+              <div id={"progress-outer-con"}>
+                <ScrollText></ScrollText>
+              </div>
+            </div>
           </div>
-          {/*<TagCloudComp/>*/}
         </section>
-        <section id="work"></section>
+        <section id="work">
+          <br />
+          <br />
+          <br />
+          <div className="title non-landing-title">
+            <p className="main-title" id="title-work">
+              {/*Work*/}
+            </p>
+          </div>
+        </section>
         <section id="contact"></section>
       </main>
     </div>
