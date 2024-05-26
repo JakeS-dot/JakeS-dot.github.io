@@ -288,8 +288,8 @@ function DancingLines(props) {
     zIndex: -100,
     top: 0,
     left: 0,
-    width: "100%",
-    height: "100%",
+    width: "100vw",
+    height: "100vh",
     cursor: "none",
   };
   return React.createElement("canvas", { ref: canvasRef, style: styles });
