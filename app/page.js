@@ -56,7 +56,7 @@ export default function Home() {
                 {wrapLetters("A Web Developer", "smaller-title")}
               </p>
               <p id={"title-desc"} className={"main-title"}>
-                Specializing in Next.js and React
+                Specializing in Next.JS, React, and Python.
               </p>
               <p className={"main-title"} id={"title-button-wrapper"}>
                 <a href={"#contact"} id="title-button">
@@ -76,49 +76,30 @@ export default function Home() {
             </p>
             <div id={"about-langs-con"}>
               <div>
-                <p className="main-title sub-title-text" id={"about-text"}>
-                  As a highly motivated student developer with four years of
-                  experience in Python coding and web development languages, I
-                  have gained valuable skills in building APIs and designing
-                  HTML/CSS interfaces. Starting my coding journey at the age of
-                  nine, I have demonstrated a strong passion for technology and
-                  a dedication to continuous learning. <br />
-                  <br />
-                  My proficiency in Python has enabled me to develop efficient
-                  algorithms and create functional applications, while my
-                  knowledge of API development has allowed me to design flexible
-                  and scalable interfaces. Additionally, my expertise in
-                  HTML/CSS has allowed me to create visually appealing and
-                  user-friendly web pages. <br />
-                  <br />
-                  <span className="no-mobile">
-                    Motivated by a strong desire to broaden my horizons and stay
-                    ahead of the technological curve, I am currently focused on
-                    expanding my skill set to include other programming
-                    languages. Through dedication, perseverance, and a
-                    willingness to step outside my comfort zone, I am confident
-                    that I can master new tools and technologies and excel in
-                    any programming endeavor that comes my way.
-                  </span>
-                </p>
-                <div className={"about-langs-con no-desktop"}>
-                  <div className="about-langs" id="div-1">
-                    <h1 className="langs-title" id={"one"}>
-                      Python <br />
-                      <span>Experience: 6 Years</span>
-                    </h1>
-                  </div>
-                  <div className="about-langs" id="div-3">
-                    <h1 className={"langs-title"} id={"three"}>
-                      Javascript <br />
-                      <span>Experience: 4 Years</span>
-                    </h1>
-                  </div>
-                  <div className="about-langs" id="div-2">
-                    <h1 className="langs-title" id={"two"}>
-                      React <br />
-                      <span>Experience: 3 Years</span>
-                    </h1>
+                <div>
+                  <p className="main-title sub-title-text" id={"about-text"}>
+                    I am a student developer with six years of experience in
+                    Python coding and four years in web development languages. I
+                    have gained valuable skills in building APIs and designing
+                    HTML/CSS interfaces. I started my coding journey at the age
+                    of nine, I appreciate the wonders of technology and have a
+                    dedication to continuous learning. <br />
+                    <br />
+                    My ability in Python lets me to develop efficient algorithms
+                    and create functional applications, while my knowledge of
+                    API development has allowed me to design flexible and
+                    scalable interfaces. Additionally, my experience in HTML/CSS
+                    has allowed me to create visually appealing and
+                    user-friendly web pages.
+                  </p>
+
+                  <div className={"portrait"}>
+                    <Image
+                      src={"/portrait.JPG"}
+                      className={"portrait-img"}
+                      fill
+                      alt={"portrait"}
+                    />
                   </div>
                 </div>
               </div>
@@ -158,25 +139,33 @@ export default function Home() {
             </p>
             <div id={"skills-flex-con"}>
               <p className="main-title sub-title-text" id="skills-text">
-                As an experienced developer, I specialize in HTML, CSS, React,
-                and Python with almost 5 years of coding experience. I excel in
-                creating visually appealing interfaces using HTML and CSS, while
-                my expertise in React enables me to build dynamic and
-                interactive web applications. With strong Python skills, I
-                deliver robust solutions for various programming challenges,
-                including algorithms, data-driven applications, and APIs. I am
-                dedicated to continuous learning and staying updated with the
-                latest trends, ensuring innovative and cutting-edge solutions
-                for clients. <br />
+                With over six years of experience in Python, I've developed a
+                strong ability to create efficient algorithms and reliable
+                applications. For nearly five years, I've also been working with
+                HTML, CSS, and React, which allows me to build engaging
+                interfaces and dynamic web experiences. My skills extend to
+                back-end technologies like Flask, MongoDB, and Node.js, enabling
+                me to handle complex data-driven applications and API
+                development with ease. Additionally, I'm proficient in Git,
+                GitHub, AWS, and Linux environments. I'm dedicated to delivering
+                innovative solutions that exceed client expectations, driven by
+                a commitment to excellence and staying current with the latest
+                practices.
                 <br />
-                Overall, my full-stack developer experience, coupled with my
-                strong Python skills, allows me to tackle diverse challenges
-                ranging from front-end development with HTML, CSS, and React to
-                back-end development involving database management, algorithmic
-                problem-solving, and API development. I am dedicated to
-                continuous learning, staying updated with the latest trends and
-                best practices, and delivering innovative and cutting-edge
-                solutions for my clients.
+                <br />
+                With my extensive experience in development and proficiency in
+                essential tools, I am ready to tackle challenging projects and
+                deliver high-quality results. I am eager to exceed client
+                expectations in my next professional opportunity. <br />
+                <br />
+                <br/>
+                <div id={'skills-title-button-wrapper'} >
+                  <span className={"main-title"} id={"title-button-wrapper"}>
+                    <a href={"#contact"} id="title-button">
+                      Lets do this!
+                    </a>
+                  </span>
+                </div>
               </p>
               <div id={"progress-outer-con"}>
                 <ScrollText></ScrollText>
@@ -188,9 +177,10 @@ export default function Home() {
           <br />
           <br />
           <br />
+          <br/>
           <div className="title non-landing-title">
             <p className="main-title" id="title-work">
-              {/*Work*/}
+              Work
             </p>
           </div>
         </section>
