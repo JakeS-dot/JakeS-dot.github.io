@@ -139,18 +139,18 @@ export default function Home() {
             </p>
             <div id={"skills-flex-con"}>
               <p className="main-title sub-title-text" id="skills-text">
-                With over six years of experience in Python, I've developed a
-                strong ability to create efficient algorithms and reliable
-                applications. For nearly five years, I've also been working with
-                HTML, CSS, and React, which allows me to build engaging
+                With over six years of experience in Python, I&apos;ve developed
+                a strong ability to create efficient algorithms and reliable
+                applications. For nearly five years, I&apos;ve also been working
+                with HTML, CSS, and React, which allows me to build engaging
                 interfaces and dynamic web experiences. My skills extend to
                 back-end technologies like Flask, MongoDB, and Node.js, enabling
                 me to handle complex data-driven applications and API
-                development with ease. Additionally, I'm proficient in Git,
-                GitHub, AWS, and Linux environments. I'm dedicated to delivering
-                innovative solutions that exceed client expectations, driven by
-                a commitment to excellence and staying current with the latest
-                practices.
+                development with ease. Additionally, I&apos;m proficient in Git,
+                GitHub, AWS, and Linux environments. I&apos;m dedicated to
+                delivering innovative solutions that exceed client expectations,
+                driven by a commitment to excellence and staying current with
+                the latest practices.
                 <br />
                 <br />
                 With my extensive experience in development and proficiency in
@@ -158,8 +158,8 @@ export default function Home() {
                 deliver high-quality results. I am eager to exceed client
                 expectations in my next professional opportunity. <br />
                 <br />
-                <br/>
-                <div id={'skills-title-button-wrapper'} >
+                <br />
+                <div id={"skills-title-button-wrapper"}>
                   <span className={"main-title"} id={"title-button-wrapper"}>
                     <a href={"#contact"} id="title-button">
                       Lets do this!
@@ -177,7 +177,7 @@ export default function Home() {
           <br />
           <br />
           <br />
-          <br/>
+          <br />
           <div className="title non-landing-title">
             <p className="main-title" id="title-work">
               Work
