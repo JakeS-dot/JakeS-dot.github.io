@@ -48,7 +48,7 @@ div#home {
   align-items: center;
 }
 
-.title p.main-title {
+.title .main-title {
   text-shadow: 0 0 15px var(--cyan);
   margin: 0 0 0 32px;
   font-size: calc(3vw + 4vh);
@@ -260,7 +260,9 @@ nav a[href="#contact"]:hover {
   text-shadow: 0 0 8px var(--orange);
 }
 
-
+#title-button-wrapper {
+  margin: 0;
+}
 
 #title-desc {
   font-size: calc(1vh + 1vw);

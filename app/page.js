@@ -138,7 +138,7 @@ export default function Home() {
               Skills
             </p>
             <div id={"skills-flex-con"}>
-              <p className="main-title sub-title-text" id="skills-text">
+              <div className="main-title sub-title-text" id="skills-text">
                 With over six years of experience in Python, I&apos;ve developed
                 a strong ability to create efficient algorithms and reliable
                 applications. For nearly five years, I&apos;ve also been working
@@ -166,7 +166,7 @@ export default function Home() {
                     </a>
                   </span>
                 </div>
-              </p>
+              </div>
               <div id={"progress-outer-con"}>
                 <ScrollText></ScrollText>
               </div>
