@@ -59,7 +59,7 @@ export default function Home() {
                 Specializing in Next.JS, React, and Python.
               </p>
               <p className={"main-title"} id={"title-button-wrapper"}>
-                <a href={"#contact"} id="title-button">
+                <a href={"#contact"} className="title-button" style={{marginLeft: '32px'}}>
                   Contact Me!
                 </a>
               </p>
@@ -161,7 +161,7 @@ export default function Home() {
                 <br />
                 <div id={"skills-title-button-wrapper"}>
                   <span className={"main-title"} id={"title-button-wrapper"}>
-                    <a href={"#contact"} id="title-button">
+                    <a href={"#contact"} className="title-button">
                       Lets do this!
                     </a>
                   </span>

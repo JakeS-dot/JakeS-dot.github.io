@@ -207,7 +207,7 @@ nav a[href="#contact"]:hover {
 }
 
 
-#title-button {
+.title-button {
   text-align: center;
   margin: 5px 5px 5px 0;
   z-index: 0;
@@ -325,7 +325,7 @@ nav a[href="#contact"]:hover {
     justify-content: center;
     align-items: center;
   }
-  #title-button {
+  .title-button {
     padding: 10px;
     position: static;
     text-align: center;
