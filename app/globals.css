@@ -284,7 +284,7 @@ nav a[href="#contact"]:hover {
   display: flex;
   max-height: 95dvh;
 }
-.about-langs h1 {
+.about-langs p {
   font-size: calc(2dvh + 2.5dvw);
   text-align: left;
   border: whitesmoke 2px solid;
@@ -428,7 +428,7 @@ nav a[href="#contact"]:hover {
 .langs-title span {
   font-size: calc(1dvh + 1.5dvw);
 }
-.about-langs h1#one {
+.about-langs p#one {
   margin-top: 0;
   text-shadow: 0 0 20px var(--orange);
 }
@@ -443,7 +443,7 @@ nav a[href="#contact"]:hover {
 
 
 @media only screen and (max-width: 786px) and (orientation: portrait) {
-  .title p.main-title {
+  .title .main-title {
     margin-left: 0;
     width: 100dvw;
     text-align: center;
@@ -482,7 +482,7 @@ nav a[href="#contact"]:hover {
     justify-content: center;
   }
 
-  .about-langs h1 {
+  .about-langs p {
     font-size: calc(2.5dvh + 4dvw);
     line-height: 5dvh;
     width: 90dvw;

@@ -33,7 +33,7 @@ export default function Home() {
     <div>
       <nav>
         <a href={"#home"} id={"logo"}>
-          <Image src="/favicon.png" alt="logo" fill priority />
+          <Image src="/favicon.png" alt="home" fill priority />
         </a>
         <a href={"#about"}>About</a>
         <a href={"#skills"}>Skills</a>
@@ -44,8 +44,10 @@ export default function Home() {
         <div>
           <DancingLines></DancingLines>
           <div className="title">
-            <div className="title-flex1">
-              <p className={"main-title"}>{wrapLetters("Hello,", "hello")}</p>
+            <div className="title-flex1" tabIndex={0}>
+              <h1 className={"main-title"}>
+                {wrapLetters("Hello,", "hello")}
+              </h1>
               <p className={"main-title"}>
                 {wrapLetters("I'm ")}
                 <span className={"marque-overlay"}>
@@ -60,6 +62,7 @@ export default function Home() {
               </p>
               <p className={"main-title"} id={"title-button-wrapper"}>
                 <a
+                  tabIndex={-1}
                   href={"#contact"}
                   className="title-button"
                   id={"main-title-button"}
@@ -75,13 +78,17 @@ export default function Home() {
           <br />
           <br />
           <div className="title non-landing-title">
-            <p id={"title-about"} className={"main-title"}>
+            <h2 id={"title-about"} className={"main-title"} tabIndex={0}>
               About Me
-            </p>
+            </h2>
             <div id={"about-langs-con"}>
               <div>
                 <div>
-                  <p className="main-title sub-title-text" id={"about-text"}>
+                  <p
+                    className="main-title sub-title-text"
+                    id={"about-text"}
+                    tabIndex={0}
+                  >
                     I am a student developer with six years of experience in
                     Python coding and four years in web development languages. I
                     have gained valuable skills in building APIs and designing
@@ -112,35 +119,40 @@ export default function Home() {
                 className={"about-langs-con no-mobile"}
               >
                 <div className="about-langs" id="div-1">
-                  <h1 className="langs-title" id={"one"}>
+                  <p className="langs-title" id={"one"}>
                     Python <br />
                     <span>Experience: 6 Years</span>
-                  </h1>
+                  </p>
                 </div>
                 <div className="about-langs" id="div-3">
-                  <h1 className={"langs-title"} id={"three"}>
+                  <p className={"langs-title"} id={"three"}>
                     Javascript <br />
                     <span>Experience: 4 Years</span>
-                  </h1>
+                  </p>
                 </div>
                 <div className="about-langs" id="div-2">
-                  <h1 className="langs-title" id={"two"}>
+                  <p className="langs-title" id={"two"}>
                     React <br />
                     <span>Experience: 3 Years</span>
-                  </h1>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section id="skills">
-
+          <br />
+          <br />
           <div className="title non-landing-title">
-            <p className="main-title" id="title-skills">
+            <h2 className="main-title" id="title-skills" tabIndex={0}>
               Skills
-            </p>
+            </h2>
             <div id={"skills-flex-con"}>
-              <div className="main-title sub-title-text" id="skills-text">
+              <div
+                className="main-title sub-title-text"
+                id="skills-text"
+                tabIndex={0}
+              >
                 With over six years of experience in Python, I&apos;ve developed
                 a strong ability to create efficient algorithms and reliable
                 applications. For nearly five years, I&apos;ve also been working
@@ -182,28 +194,32 @@ export default function Home() {
           <br />
           <br />
           <div className="title non-landing-title">
-            <p className="main-title" id="title-work">
+            <h2 className="main-title" id="title-work" tabIndex={0}>
               Work
-            </p>
+            </h2>
             <div id="work-flex-con">
-              <div className="main-title sub-title-text" id={"work-text"}>
-                Throughout my professional journey, I've worked on several
+              <div
+                className="main-title sub-title-text"
+                id={"work-text"}
+                tabIndex={0}
+              >
+                Throughout my professional journey, I&apos;ve worked on several
                 projects that showcase my skills in Python, React, and Next.js.
-                One notable project is my Discord bot, which I
-                built using the Discord.py API wrapper. This project highlights
-                my ability to integrate third-party APIs. I also created a
-                mobile-only weather app with React, demonstrating my ability to
-                design responsive and user-friendly interfaces. These projects
-                show my capability to use modern technologies to solve
-                real-world problems and improve user experiences.
+                One notable project is my Discord bot, which I built using the
+                Discord.py API wrapper. This project highlights my ability to
+                integrate third-party APIs. I also created a mobile-only weather
+                app with React, demonstrating my ability to design responsive
+                and user-friendly interfaces. These projects show my capability
+                to use modern technologies to solve real-world problems and
+                improve user experiences.
                 <br />
                 <br />I also hold a Hackerrank certification in Python
                 problem-solving, which proves my proficiency in Python and
                 algorithmic thinking. My involvement in open-source projects on
                 GitHub reflects my dedication to collaborative learning and
-                contributing to the tech community. Looking ahead, I'm excited
-                about new opportunities to grow my skills and continue making
-                valuable contributions to web development.
+                contributing to the tech community. Looking ahead, I&apos;m
+                excited about new opportunities to grow my skills and continue
+                making valuable contributions to web development.
               </div>
               <div className="grid-con">
                 <div id="grid-1">
@@ -278,14 +294,14 @@ export default function Home() {
           <br />
           <br />
           <div className="title non-landing-title">
-            <p className="main-title" id="title-contact">
+            <h2 className="main-title" id="title-contact" tabIndex={0}>
               Contact
-            </p>
+            </h2>
           </div>
           <div className="contact-div">
-            <p className="main-title" id={"contact-desc"}>
+            <p className="main-title" id={"contact-desc"} tabIndex={0}>
               Wanna have some fun? Lets do this! Im interested in freelance and
-              small things that I can balance. (I'm still in school!)
+              small things that I can balance. (I&apos;m still in school!)
             </p>
             <p className="main-title">
               Contact me at: <br />
