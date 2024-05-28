@@ -1,7 +1,7 @@
-
 @media (prefers-color-scheme: dark) or (prefers-color-scheme: no-preference) {
   :root {
     --gray: #080510;
+    --light-gray: #1b191f;
     --red: #f32b29;
     --orange: #f55421;
     --yellow: #ffff00;
@@ -16,6 +16,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --gray: #212025;
+    --light-gray: #313036;
     --red: #ff6b6b;
     --orange: #ff8c1a;
     --yellow: #ffff66;
@@ -37,21 +38,21 @@ body {
 
 section,
 div#home {
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   background-color: var(--gray);
 }
 
 .title {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   align-items: center;
 }
 
 .title .main-title {
   text-shadow: 0 0 15px var(--cyan);
   margin: 0 0 0 32px;
-  font-size: calc(3vw + 4vh);
+  font-size: calc(3dvw + 4dvh);
   font-weight: 600;
 }
 .animation-class {
@@ -66,23 +67,23 @@ div#home {
 nav {
   z-index: 50;
   position: fixed;
-  min-height: 7vh;
-  background-color: #181818;
+  min-height: 7dvh;
+  background-color: var(--light-gray);
   display: flex;
-  width: 100vw;
+  width: 100dvw;
 }
 
 nav a {
   transition: color 0.15s ease-out;
-  width: 100vw;
+  width: 100dvw;
   align-content: center;
   text-align: center;
   padding: 0 8px 0 8px;
   color: whitesmoke;
   text-decoration: none;
   font-weight: bold;
-  border-left: 2px solid #1d1e21;
-  border-right: 2px solid #1d1e21;
+  border-left: 2px solid #212225;
+  border-right: 2px solid #212225;
 }
 
 nav a[href="#about"]:hover {
@@ -98,7 +99,11 @@ nav a[href="#work"]:hover {
 }
 
 nav a[href="#contact"]:hover {
-  color: var(--cyan);
+  color: var(--blue);
+}
+
+#main-title-button {
+  margin-left: 32px;
 }
 
 #logo {
@@ -110,11 +115,11 @@ nav a[href="#contact"]:hover {
 }
 
 #smaller-title {
-  font-size: calc(3vh + 4vw);
+  font-size: calc(3dvh + 4dvw);
 }
 
 #hello {
-  font-size: calc(6vh+ 5vw);
+  font-size: calc(6dvh+ 5dvw);
 }
 
 #title-marque {
@@ -133,8 +138,8 @@ nav a[href="#contact"]:hover {
 
 .tagcloud {
   /*scale: 70%;*/
-  /*width: 50vw !important;*/
-  /*height: 60vh !important;*/
+  /*width: 50dvw !important;*/
+  /*height: 60dvh !important;*/
   z-index: 0;
   font-weight: 600;
   letter-spacing: 0.0625em;
@@ -145,10 +150,9 @@ nav a[href="#contact"]:hover {
   z-index: -10;
   cursor: default;
   color: var(--cyan);
-  padding: 0.5vw;
-  font-size: calc(1vh + 0.9vw);
+  padding: 0.5dvw;
+  font-size: calc(1dvh + 0.9dvw);
 }
-
 
 .marque-overlay {
   background-size: 200% 100%;
@@ -166,9 +170,8 @@ nav a[href="#contact"]:hover {
 }
 
 .text-sphere {
-  width: 50vw;
+  width: 50dvw;
 }
-
 
 .marque-overlay span {
   cursor: default;
@@ -177,8 +180,8 @@ nav a[href="#contact"]:hover {
   text-shadow: 0 0 10px var(--red) !important;
 }
 .sub-title-text {
-  width: 45vw;
-  font-size: calc(1vw + 1vh) !important;
+  width: 45dvw;
+  font-size: calc(1dvw + 1dvh) !important;
   color: whitesmoke;
 }
 
@@ -187,17 +190,17 @@ nav a[href="#contact"]:hover {
 }
 
 .portrait-img {
-  width: 25vw !important;
+  width: 25dvw !important;
   height: auto !important;
   margin: 10px 10px 10px 32px;
   filter: grayscale(100%);
 }
 
-
 #about-text {
   text-shadow: 0 0 8px var(--red);
 }
-#skills-flex-con {
+#skills-flex-con,
+#work-flex-con {
   display: flex;
 }
 
@@ -206,7 +209,6 @@ nav a[href="#contact"]:hover {
   margin: 20px;
 }
 
-
 .title-button {
   text-align: center;
   margin: 5px 5px 5px 0;
@@ -214,7 +216,7 @@ nav a[href="#contact"]:hover {
   text-shadow: none;
   color: whitesmoke;
   text-decoration: none;
-  font-size: calc(2vh + 2vw);
+  font-size: calc(2dvh + 2dvw);
   padding: 4px;
   position: absolute;
   background-image: none;
@@ -226,14 +228,14 @@ nav a[href="#contact"]:hover {
   padding: 10px;
 }
 #progress-outer-con {
-  width: 50vw;
-  /*margin-top: -10vh;*/
+  width: 50dvw;
+  /*margin-top: -10dvh;*/
 }
 
 #progress-outer-con div {
-  height: 80vh;
+  height: 80dvh;
 }
-#title-button:hover {
+.title-button:hover {
   transition: all 0.3s linear;
   background-size: 200% 100%;
   background-image: repeating-linear-gradient(
@@ -250,7 +252,7 @@ nav a[href="#contact"]:hover {
 
 .non-landing-title {
   display: contents;
-  height: 100vh;
+  height: 100dvh;
   align-items: start;
 }
 #title-skills {
@@ -260,27 +262,35 @@ nav a[href="#contact"]:hover {
   text-shadow: 0 0 8px var(--orange);
 }
 
+#work-text {
+  text-shadow: 0 0 8px var(--yellow);
+}
+
+#title-work {
+  text-shadow: 0 0 10px var(--yellow);
+}
+
 #title-button-wrapper {
   margin: 0;
 }
 
 #title-desc {
-  font-size: calc(1vh + 1vw);
+  font-size: calc(1dvh + 1dvw);
   color: #5a606b;
   text-shadow: none;
 }
 
 #about-langs-con {
   display: flex;
-  max-height: 95vh;
+  max-height: 95dvh;
 }
 .about-langs h1 {
-  font-size: calc(2vh + 2.5vw);
+  font-size: calc(2dvh + 2.5dvw);
   text-align: left;
   border: whitesmoke 2px solid;
   border-radius: 15px;
   height: auto;
-  width: 35vw;
+  width: 35dvw;
   padding: 10px;
 }
 .no-desktop {
@@ -289,15 +299,134 @@ nav a[href="#contact"]:hover {
   z-index: -100;
 }
 .about-langs {
-  max-height: 25vh;
-  margin: 0 5vw 3vh 6vw;
+  max-height: 25dvh;
+  margin: 0 5dvw 3dvh 6dvw;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
+.grid-con div {
+  min-width: 14.5dvw;
+  height: 25dvh;
+  margin: 5px 5px 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--light-gray);
+  box-shadow: 4px 4px 5px #45444b;
+}
+.grid-link {
+  margin-top: 15px !important;
+}
+.grid-link a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#mailto {
+  text-decoration: none;
+  color: whitesmoke;
+}
+#title-contact {
+  text-shadow: 0 0 20px var(--blue);
+  margin-left: 0;
+  text-align: center;
+}
+
+#contact-desc {
+  font-size: calc(2dvh + 2dvw);
+}
+.contact-div {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 10px var(--cyan);
+  font-size: calc(3dvh + 3dvw);
+}
+
+#mailto:hover {
+  color: var(--cyan);
+  transition: 300ms all ease-in-out;
+  text-decoration: underline;
+}
+
+.grid-link a:hover {
+  transition: color 150ms ease-in-out;
+  color: cyan;
+}
+
+.grid-desc {
+  color: #7e848d;
+  margin: 5px;
+  font-size: calc(1dvw + 0.75dvh);
+}
+
+#grid-1 {
+  .grid-title {
+    color: var(--yellow);
+  }
+  border-top: 2px var(--yellow) solid;
+}
+
+#grid-2 {
+  .grid-title {
+    color: var(--cyan);
+  }
+  border-top: 2px var(--cyan) solid;
+}
+
+#grid-3-link {
+  color: whitesmoke !important;
+  cursor: pointer;
+}
+
+#grid-3-link:hover {
+  color: var(--cyan) !important;
+  transition: color 150ms ease-in-out;
+}
+
+#grid-3 {
+  .grid-title {
+    color: #5e6a77;
+  }
+  border-top: 2px #5e6a77 solid;
+}
+
+#grid-4 {
+  .grid-title {
+    color: var(--red);
+  }
+  border-top: 2px var(--red) solid;
+}
+
+#grid-5 {
+  .grid-title {
+    color: var(--orange);
+  }
+  border-top: 2px var(--orange) solid;
+}
+
+#grid-6 {
+  .grid-title {
+    color: var(--blue);
+  }
+  border-top: 2px var(--blue) solid;
+}
+
+.grid-title {
+  margin: 7px;
+  font-size: calc(1.2dvw + 1.2dvh);
+}
+.grid-con {
+  gap: 10px;
+  margin-left: 15px;
+  width: 48dvw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 .langs-title span {
-  font-size: calc(1vh + 1.5vw);
+  font-size: calc(1dvh + 1.5dvw);
 }
 .about-langs h1#one {
   margin-top: 0;
@@ -312,12 +441,16 @@ nav a[href="#contact"]:hover {
   text-shadow: 0 0 20px var(--yellow);
 }
 
-@media only screen and (max-width: 786px) and (orientation: portrait) {
 
+@media only screen and (max-width: 786px) and (orientation: portrait) {
   .title p.main-title {
     margin-left: 0;
-    width: 100vw;
+    width: 100dvw;
     text-align: center;
+  }
+
+  #main-title-button {
+    margin-left: 0;
   }
 
   #title-button-wrapper {
@@ -331,10 +464,10 @@ nav a[href="#contact"]:hover {
     text-align: center;
   }
   .sub-title-text {
-    font-size: calc(1vw + 1vh) !important;
-    margin-left: 10vw !important;
+    font-size: calc(1dvw + 1dvh) !important;
+    margin-left: 10dvw !important;
     text-align: left !important;
-    width: 80vw !important;
+    width: 80dvw !important;
   }
 
   .no-desktop {
@@ -350,11 +483,11 @@ nav a[href="#contact"]:hover {
   }
 
   .about-langs h1 {
-    font-size: calc(2.5vh + 4vw);
-    line-height: 5vh;
-    width: 90vw;
+    font-size: calc(2.5dvh + 4dvw);
+    line-height: 5dvh;
+    width: 90dvw;
     span {
-      font-size: calc(1.5vh + 3vw);
+      font-size: calc(1.5dvh + 3dvw);
     }
     margin: 0;
     text-align: center;
@@ -364,37 +497,62 @@ nav a[href="#contact"]:hover {
   }
   #progress-outer-con {
     overflow: hidden;
-    width: 100vw;
+    width: 100dvw;
     border: none;
   }
 
-
   .tagcloud {
     margin-left: 10px;
-    margin-top: -18vh;
+    margin-top: -18dvh;
     scale: 60%;
-    width: 90vw !important;
+    width: 90dvw !important;
+  }
 
+  #work-flex-con {
+    flex-direction: column;
+  }
+
+  .grid-con {
+    margin-left: 10px;
+    margin-top: 3dvh;
+    justify-content: center;
+    gap: 10px;
+    width: 95dvw;
+    grid-template-columns: 30dvw 30dvw 30dvw;
+  }
+
+  .grid-con div {
+    max-height: 20dvh;
   }
 
   #skills-text {
-    max-height: 50vh;
+    max-height: 50dvh;
   }
-
+  #mailto {
+    font-size: calc(2.5dvh + 1dvw);
+    word-wrap: break-word;
+  }
   .portrait-img {
-    margin: 15px 0 15px 10vw;
-    width: 80vw !important
+    margin: 15px 0 15px 10dvw;
+    width: 80dvw !important;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .tagcloud {
     scale: 70%;
-    margin-left: -20vw;
+    margin-left: -20dvw;
   }
 
   .text-sphere {
-    width: 50vw;
+    width: 50dvw;
     overflow: hidden;
+  }
+
+  #work-text {
+    width: 35dvw;
+  }
+
+  .portrait-img {
+    width: 45dvw !important;
   }
 }

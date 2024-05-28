@@ -59,7 +59,11 @@ export default function Home() {
                 Specializing in Next.JS, React, and Python.
               </p>
               <p className={"main-title"} id={"title-button-wrapper"}>
-                <a href={"#contact"} className="title-button" style={{marginLeft: '32px'}}>
+                <a
+                  href={"#contact"}
+                  className="title-button"
+                  id={"main-title-button"}
+                >
                   Contact Me!
                 </a>
               </p>
@@ -130,9 +134,7 @@ export default function Home() {
           </div>
         </section>
         <section id="skills">
-          <br />
-          <br />
-          <br />
+
           <div className="title non-landing-title">
             <p className="main-title" id="title-skills">
               Skills
@@ -178,13 +180,121 @@ export default function Home() {
           <br />
           <br />
           <br />
+          <br />
           <div className="title non-landing-title">
             <p className="main-title" id="title-work">
               Work
             </p>
+            <div id="work-flex-con">
+              <div className="main-title sub-title-text" id={"work-text"}>
+                Throughout my professional journey, I've worked on several
+                projects that showcase my skills in Python, React, and Next.js.
+                One notable project is my Discord bot, which I
+                built using the Discord.py API wrapper. This project highlights
+                my ability to integrate third-party APIs. I also created a
+                mobile-only weather app with React, demonstrating my ability to
+                design responsive and user-friendly interfaces. These projects
+                show my capability to use modern technologies to solve
+                real-world problems and improve user experiences.
+                <br />
+                <br />I also hold a Hackerrank certification in Python
+                problem-solving, which proves my proficiency in Python and
+                algorithmic thinking. My involvement in open-source projects on
+                GitHub reflects my dedication to collaborative learning and
+                contributing to the tech community. Looking ahead, I'm excited
+                about new opportunities to grow my skills and continue making
+                valuable contributions to web development.
+              </div>
+              <div className="grid-con">
+                <div id="grid-1">
+                  <p className="grid-title">Python & API</p>
+                  <p className="grid-title grid-link">
+                    <a href="https://github.com/JakeS-dot/kyokodiscordbot">
+                      Kyoko Sakura
+                    </a>
+                  </p>
+                  <p className="grid-desc">
+                    A Discord bot made with the Discord.py API wrapper around 3
+                    years ago.
+                  </p>
+                </div>
+                <div id="grid-2">
+                  <p className="grid-title">Full Stack</p>
+                  <p className="grid-title grid-link">
+                    <a href="https://github.com/JakeS-dot/reactweatherapp">
+                      Weather App
+                    </a>
+                  </p>
+                  <p className="grid-desc">
+                    A weather app made in React, for mobile only.
+                  </p>
+                </div>
+                <div id="grid-3">
+                  <p className="grid-title">Unknown</p>
+                  <p className="grid-title grid-link" id={"grid-3-link"}>
+                    Coming Soon
+                  </p>
+                  <p className="grid-desc">
+                    Front-end, Back-end, anything. It may be your project!
+                  </p>
+                </div>
+                <div id="grid-4">
+                  <p className="grid-title">Hackerrank</p>
+                  <p className="grid-title grid-link">
+                    <a href="https://www.hackerrank.com/certificates/9750bb84864d">
+                      Certificate
+                    </a>
+                  </p>
+                  <p className="grid-desc">
+                    Hackerrank.net certification for python problem solving.
+                  </p>
+                </div>
+                <div id="grid-5">
+                  <p className="grid-title">GitHub Page</p>
+                  <p className="grid-title grid-link">
+                    <a href="https://github.com/JakeS-dot/">Github</a>
+                  </p>
+                  <p className="grid-desc">
+                    Link to my GitHub, with linked projects and more!
+                  </p>
+                </div>
+                <div id="grid-6">
+                  <p className="grid-title">Front End</p>
+                  <p className="grid-title grid-link">
+                    <a href="https://github.com/JakeS-dot/JakeS-dot.github.io">
+                      Source Code
+                    </a>
+                  </p>
+                  <p className="grid-desc">Source Code for this website!</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="title non-landing-title">
+            <p className="main-title" id="title-contact">
+              Contact
+            </p>
+          </div>
+          <div className="contact-div">
+            <p className="main-title" id={"contact-desc"}>
+              Wanna have some fun? Lets do this! Im interested in freelance and
+              small things that I can balance. (I'm still in school!)
+            </p>
+            <p className="main-title">
+              Contact me at: <br />
+              <a id="mailto" href="mailto:jakeshankman15@gmail.com">
+                jakeshankman15@gmail.com
+              </a>
+            </p>
+          </div>
+        </section>
       </main>
     </div>
   );
