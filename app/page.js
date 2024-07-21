@@ -45,20 +45,18 @@ export default function Home() {
           <DancingLines></DancingLines>
           <div className="title">
             <div className="title-flex1" tabIndex={0}>
-              <h1>
-                <p className={"main-title"}>{wrapLetters("Hello,", "hello")}</p>
-                <p className={"main-title"}>
-                  {wrapLetters("I'm ")}
-                  <b>
-                    <span className={"marque-overlay"}>
-                      {wrapLetters("Jake Shankman", "title-marque")}
-                    </span>
-                  </b>
-                </p>
-                <p className={"main-title"}>
-                  {wrapLetters("A Web Developer", "smaller-title")}
-                </p>
+              <p className={"main-title"}>{wrapLetters("Hello,", "hello")}</p>
+              <h1 className={"main-title"}>
+                {wrapLetters("I'm ")}
+                <b>
+                  <span className={"marque-overlay"}>
+                    {wrapLetters("Jake Shankman", "title-marque")}
+                  </span>
+                </b>
               </h1>
+              <p className={"main-title"}>
+                {wrapLetters("A Web Developer", "smaller-title")}
+              </p>
               <p id={"title-desc"} className={"main-title"}>
                 <b>Specializing in Next.JS, React, and Python.</b>
               </p>
