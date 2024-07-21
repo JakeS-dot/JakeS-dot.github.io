@@ -5,12 +5,12 @@
   src: local("ArcadeClassic"),
     url(https://fonts.cdnfonts.com/s/6071/ARCADECLASSIC.woff) format("woff");
 }
+
+
 .body {
-  background: #1d1e21;
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative; /* Add this line */
 }
 
@@ -29,11 +29,11 @@
 }
 
 .track {
+  margin: 0;
   white-space: nowrap;
   height: auto;
   will-change: transform;
   animation: marquee 6s linear reverse infinite;
-  z-index: 0;
 }
 
 .track::after {
@@ -53,18 +53,18 @@
 
 
 .noodles {
-  z-index: 4;
+  z-index: 15;
   width: 100vw;
   height: 93vh;
-  top: 10px;
   position: absolute;
   cursor: none;
   grid-template-columns: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
   grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
   column-gap: 10px;
   row-gap: 15px;
-  background-image: url("https://media0.giphy.com/media/KcWaUe5tKkIrSI2LaU/giphy.gif?cid=6c09b952ub2v4tgip8ofzgt53fkabytssikz5nucqw18jc2c&ep=v1_stickers_related&rid=giphy.gif&ct=");
+  background-image: url("https://i.giphy.com/KcWaUe5tKkIrSI2LaU.webp");
   background-size: 10vh auto;
+  background-color: transparent;
 }
 
 .noodles img {
@@ -80,3 +80,12 @@
   background: none;
   border: none;
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  display: flex;
+  z-index: 69;
+  cursor: pointer;
+  font-weight: 700;
+ }

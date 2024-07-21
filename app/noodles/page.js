@@ -82,7 +82,7 @@ const RainbowText = ({ count, font }) => {
 
   return (
     <div className={styles.marquee}>
-      <div className={styles.track} style={{ marginTop: font - 15 }}>
+      <div className={styles.track} style={{ margin: 0 }}>
         {repeatedText.split("").map((letter, index) => (
           <span
             key={index}
@@ -108,195 +108,161 @@ const RainbowText = ({ count, font }) => {
 export default function Noodles() {
   return (
     <>
-      <div className={styles.body}>
-        <AudioPlayer />
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -48.5, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -48.7, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -48.7, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -48.7, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>{" "}
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -48.5, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -48.7, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div className={styles.noodles}></div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
-        </div>
-        <div style={{ marginTop: -49, marginBottom: 0 }}>
-          <RainbowText count={26} font={32} />
+      <div className={styles.noodles}></div>
+      <div>
+        <div className={styles.body}>
+          <AudioPlayer />
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>{" "}
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
+          <div style={{ marginTop: -16 }}>
+            <RainbowText count={26} font={32} />
+          </div>
         </div>
       </div>
-      <div
-        style={{
-          marginTop: "-5dvh",
-          marginBottom: 0,
-          fontSize: 24,
-          display: "flex",
-          zIndex: 69,
-          cursor: "pointer",
-          fontWeight: 700,
-          justifyContent: "space-between",
-        }}
-      >
-        <span style={{ marginLeft: 10, zIndex: 5 }}>Made by Jake.S</span>
-        <span style={{ marginRight: 10, zIndex: 5 }}>For Danny</span>
+      <div className={styles.footer}>
+        <span style={{ marginLeft: 10, zIndex: 5 }}>Made by Jake.S </span>
+        <span style={{ marginRight: 10, zIndex: 5, paddingLeft: 35 }}>
+          For Danny
+        </span>
       </div>
     </>
   );
