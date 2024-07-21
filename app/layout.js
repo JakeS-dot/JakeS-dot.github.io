@@ -14,47 +14,52 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <title>Jake Shankman | Portfolio</title>
-        <meta name="title" content="Jake Shankman | Portfolio" />
-        <meta
-          name="description"
-          content="Portfolio of Jake Shankman, A web developer who specializes in React and Next.JS"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://jakeshankman.me/" />
-        <meta property="og:title" content="Jake Shankman | Portfolio" />
-        <meta
+    <head>
+      <title>Jake Shankman | Portfolio</title>
+      <meta name="title" content="Jake Shankman | Portfolio"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://jakeshankman.me/"/>
+      <meta property="og:title" content="Jake Shankman | Portfolio"/>
+      <meta
           property="og:description"
           content="Portfolio of Jake Shankman, A web developer who specializes in React and Next.JS"
-        />
-        <meta property="og:image" content="/meta-tags.png" />
+      />
+      <meta property="og:image" content="https://jakeshankman.me/meta-tags.png"/>
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://jakeshankman.me/" />
-        <meta property="twitter:title" content="Jake Shankman | Portfolio" />
-        <meta
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:url" content="https://jakeshankman.me/"/>
+      <meta property="twitter:title" content="Jake Shankman | Portfolio"/>
+      <meta
           property="twitter:description"
           content="Portfolio of Jake Shankman, A web developer who specializes in React and Next.JS"
-        />
-        <meta property="twitter:image" content="/meta-tags.png" />
+      />
+      <meta property="twitter:image" content="https://jakeshankman.me/meta-tags.png"/>
 
-        <link rel="canonical" href="https://jakeshankman.me" />
-        <GoogleAnalytics gaId="G-ES4PXVNQ0M" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
+      <link rel="canonical" href="https://jakeshankman.me"/>
+      <GoogleAnalytics gaId="G-ES4PXVNQ0M"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="true"
-        />
-        <link
+      />
+      <link
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
           rel="stylesheet"
-        />
-        <title>Jake Shankman | Portfolio</title>
-        <link rel="icon" href="favicon.ico" sizes="any" />
-        <script
+      />
+      <title>Jake Shankman | Portfolio</title>
+      <link rel="icon" href="favicon.ico" sizes="any"/>
+      <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
+      <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"/>
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
+      <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"/>
+      <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"/>
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"/>
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: `
@@ -113,10 +118,10 @@ export default function RootLayout({ children }) {
             }
           `,
           }}
-        ></script>
-      </head>
+      ></script>
+    </head>
 
-      <body>{children}</body>
+    <body>{children}</body>
     </html>
   );
 }

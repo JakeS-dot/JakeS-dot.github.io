@@ -45,20 +45,22 @@ export default function Home() {
           <DancingLines></DancingLines>
           <div className="title">
             <div className="title-flex1" tabIndex={0}>
-              <h1 className={"main-title"}>
-                {wrapLetters("Hello,", "hello")}
+              <h1>
+                <p className={"main-title"}>{wrapLetters("Hello,", "hello")}</p>
+                <p className={"main-title"}>
+                  {wrapLetters("I'm ")}
+                  <b>
+                    <span className={"marque-overlay"}>
+                      {wrapLetters("Jake Shankman", "title-marque")}
+                    </span>
+                  </b>
+                </p>
+                <p className={"main-title"}>
+                  {wrapLetters("A Web Developer", "smaller-title")}
+                </p>
               </h1>
-              <p className={"main-title"}>
-                {wrapLetters("I'm ")}
-                <span className={"marque-overlay"}>
-                  {wrapLetters("Jake Shankman", "title-marque")}
-                </span>
-              </p>
-              <p className={"main-title"}>
-                {wrapLetters("A Web Developer", "smaller-title")}
-              </p>
               <p id={"title-desc"} className={"main-title"}>
-                Specializing in Next.JS, React, and Python.
+                <b>Specializing in Next.JS, React, and Python.</b>
               </p>
               <p className={"main-title"} id={"title-button-wrapper"}>
                 <a
@@ -91,17 +93,17 @@ export default function Home() {
                   >
                     I am a student developer with six years of experience in
                     Python coding and four years in web development languages. I
-                    have gained valuable skills in building APIs and designing
-                    HTML/CSS interfaces. I started my coding journey at the age
-                    of nine, I appreciate the wonders of technology and have a
-                    dedication to continuous learning. <br />
+                    have gained many skills in building APIs and designing
+                    HTML/CSS interfaces. I started coding at the age of nine, I
+                    love technology and have a dedication to learning more
+                    about. <br />
                     <br />
-                    My ability in Python lets me to develop efficient algorithms
-                    and create functional applications, while my knowledge of
-                    API development has allowed me to design flexible and
-                    scalable interfaces. Additionally, my experience in HTML/CSS
-                    has allowed me to create visually appealing and
-                    user-friendly web pages.
+                    Python lets me to develop efficient algorithms and create
+                    functional applications, while my knowledge of API
+                    development has allowed me to design flexible and scalable
+                    interfaces. Additionally, my experience in HTML/CSS has
+                    allowed me to create visually appealing and user-friendly
+                    web pages.
                   </p>
 
                   <div className={"portrait"}>
@@ -109,7 +111,8 @@ export default function Home() {
                       src={"/portrait.JPG"}
                       className={"portrait-img"}
                       fill
-                      alt={"portrait"}
+                      alt={"Jake Shankman"}
+                      title={"Picture of Jake Shankman"}
                     />
                   </div>
                 </div>
@@ -281,7 +284,9 @@ export default function Home() {
                       Source Code
                     </a>
                   </p>
-                  <p className="grid-desc">Source Code for this website!</p>
+                  <p className="grid-desc">
+                    Source Code for my Portfolio Website!
+                  </p>
                 </div>
               </div>
             </div>
