@@ -291,27 +291,24 @@ export default function Home() {
           </div>
         </section>
         <section id="contact">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <div className="title non-landing-title">
-            <h2 className="main-title" id="title-contact" tabIndex={0}>
-              Contact
-            </h2>
-          </div>
-          <div className="contact-div">
-            <p className="main-title" id={"contact-desc"} tabIndex={0}>
-              Wanna have some fun? Lets do this! Im interested in freelance and
-              small things that I can balance. (I&apos;m still in school!)
-            </p>
-            <p className="main-title">
-              Contact me at: <br />
-              <a id="mailto" href="mailto:jakeshankman15@gmail.com">
-                jakeshankman15@gmail.com
-              </a>
-            </p>
+          <div className="contact-con">
+            <div className="title non-landing-title">
+              <h2 className="main-title" id="title-contact" tabIndex={0}>
+                Contact
+              </h2>
+            </div>
+            <div className="contact-div">
+              <p className="main-title" id={"contact-desc"} tabIndex={0}>
+                Wanna have some fun? Lets do this! Im interested in freelance
+                and small things that I can balance. (I&apos;m still in school!)
+              </p>
+              <p className="main-title">
+                Contact me at: <br />
+                <a id="mailto" href="mailto:jakeshankman15@gmail.com">
+                  jakeshankman15@gmail.com
+                </a>
+              </p>
+            </div>
           </div>
         </section>
       </main>

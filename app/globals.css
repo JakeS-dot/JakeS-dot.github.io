@@ -341,6 +341,7 @@ nav a[href="#contact"]:hover {
   font-weight: bold;
   text-shadow: 0 0 10px var(--cyan);
   font-size: calc(3dvh + 3dvw);
+  margin: 0 3vw 0 3vw
 }
 
 #mailto:hover {
@@ -414,7 +415,7 @@ nav a[href="#contact"]:hover {
 
 .grid-title {
   margin: 7px;
-  font-size: calc(1.2dvw + 1.2dvh);
+  font-size: calc(1.2dvw + 1.6dvh);
 }
 .grid-con {
   gap: 10px;
@@ -518,11 +519,11 @@ nav a[href="#contact"]:hover {
     justify-content: center;
     gap: 10px;
     width: 95dvw;
-    grid-template-columns: 30dvw 30dvw 30dvw;
+    grid-template-columns: 45dvw 45dvw;
   }
 
   .grid-con div {
-    max-height: 20dvh;
+    max-height: 15dvh;
   }
 
   #skills-text {
@@ -535,6 +536,12 @@ nav a[href="#contact"]:hover {
   .portrait-img {
     margin: 15px 0 15px 10dvw;
     width: 80dvw !important;
+  }
+  .contact-con {
+    padding-top: 35vh;
+  }
+  #work {
+    padding-bottom: 20vh;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
