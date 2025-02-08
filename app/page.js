@@ -105,13 +105,7 @@ export default function Home() {
                   </p>
 
                   <div className={"portrait"}>
-                    <Image
-                      src={"/portrait.JPG"}
-                      className={"portrait-img"}
-                      fill
-                      alt={"Jake Shankman"}
-                      title={"Picture of Jake Shankman"}
-                    />
+                    <h1>I love web dev!</h1>
                   </div>
                 </div>
               </div>
