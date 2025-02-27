@@ -105,7 +105,7 @@ export default function Home() {
                   </p>
 
                   <div className={"portrait"}>
-                    <h1>I love web dev!</h1>
+                    <h1></h1>
                   </div>
                 </div>
               </div>
